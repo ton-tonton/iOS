@@ -53,8 +53,19 @@
     
     //draw image
     UIImage *logoImg = [UIImage imageNamed:@"logo.png"];
-    NSLog(@"width: %f, height: %f", logoImg.size.width, logoImg.size.height);
-    [logoImg drawInRect:rect];
+    CGRect imageRect = CGRectMake(bounds.size.width / 4.0,
+                                 bounds.size.height / 4.0,
+                                 bounds.size.width / 2.0,
+                                 bounds.size.height / 2.0);
+    [logoImg drawInRect: imageRect];
+    NSLog(@"imageRect");
+    NSLog(@"origin.x = %.2f, origin.y = %.2f", imageRect.origin.x, imageRect.origin.y);
+    NSLog(@"size.width = %.2f, size.height = %.2f", imageRect.size.width, imageRect.size.height);
+    
+    NSLog(@"framRect");
+    NSLog(@"origin.x = %.2f, origin.y = %.2f", bounds.origin.x, bounds.origin.y);
+    NSLog(@"size.width = %.2f, size.height = %.2f", bounds.size.width, bounds.size.height);
+
 }
 
 
