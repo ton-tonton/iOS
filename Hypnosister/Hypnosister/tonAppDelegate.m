@@ -16,18 +16,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Override point for customization after application launch.
-    CGRect firstFrame = CGRectMake(160, 240, 100, 150);
-    CGRect secondFrame = CGRectMake(20, 30, 50, 50);
+    CGRect firstFrame = self.window.bounds;
     
     tonHypnosisterView *firstView = [[tonHypnosisterView alloc] initWithFrame:firstFrame];
-    tonHypnosisterView *secondView = [[tonHypnosisterView alloc] initWithFrame:secondFrame];
     
-    firstView.backgroundColor = [UIColor redColor];
-    secondView.backgroundColor = [UIColor blueColor];
+    firstView.backgroundColor = [UIColor cyanColor];
     
     [self.window addSubview:firstView];
-    [firstView addSubview:secondView];
-    
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
