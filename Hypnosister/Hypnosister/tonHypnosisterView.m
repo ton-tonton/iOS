@@ -44,11 +44,17 @@
                      clockwise:YES];
     }
     
-    
     //properties
     path.lineWidth = 10;
     [[UIColor lightGrayColor] setStroke];
+    
+    //draw
     [path stroke];
+    
+    //draw image
+    UIImage *logoImg = [UIImage imageNamed:@"logo.png"];
+    NSLog(@"width: %f, height: %f", logoImg.size.width, logoImg.size.height);
+    [logoImg drawInRect:rect];
 }
 
 

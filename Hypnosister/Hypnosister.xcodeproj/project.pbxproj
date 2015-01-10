@@ -20,6 +20,7 @@
 		1C67B4431A5FD9F600631FBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C67B4411A5FD9F600631FBD /* InfoPlist.strings */; };
 		1C67B4451A5FD9F600631FBD /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C67B4441A5FD9F600631FBD /* HypnosisterTests.m */; };
 		1C67B4501A5FE28700631FBD /* tonHypnosisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C67B44F1A5FE28700631FBD /* tonHypnosisterView.m */; };
+		1CE6D6221A61140B00711612 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CE6D6211A61140B00711612 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1C67B4441A5FD9F600631FBD /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
 		1C67B44E1A5FE28700631FBD /* tonHypnosisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tonHypnosisterView.h; sourceTree = "<group>"; };
 		1C67B44F1A5FE28700631FBD /* tonHypnosisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tonHypnosisterView.m; sourceTree = "<group>"; };
+		1CE6D6211A61140B00711612 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = "../../Solutions/00-Resources/logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		1C67B4251A5FD9F600631FBD /* Hypnosister */ = {
 			isa = PBXGroup;
 			children = (
+				1CE6D6231A61141600711612 /* Images */,
 				1C67B42E1A5FD9F600631FBD /* tonAppDelegate.h */,
 				1C67B42F1A5FD9F600631FBD /* tonAppDelegate.m */,
 				1C67B4311A5FD9F600631FBD /* Images.xcassets */,
@@ -147,6 +150,14 @@
 				1C67B4411A5FD9F600631FBD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CE6D6231A61141600711612 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1CE6D6211A61140B00711612 /* logo.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 			files = (
 				1C67B42A1A5FD9F600631FBD /* InfoPlist.strings in Resources */,
 				1C67B4321A5FD9F600631FBD /* Images.xcassets in Resources */,
+				1CE6D6221A61140B00711612 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +456,7 @@
 				1C67B44A1A5FD9F600631FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C67B44B1A5FD9F600631FBD /* Build configuration list for PBXNativeTarget "HypnosisterTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +465,7 @@
 				1C67B44D1A5FD9F600631FBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
