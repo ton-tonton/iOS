@@ -51,20 +51,25 @@
     //draw
     [path stroke];
     
-    //draw image
+    //init image
+    CGContextRef currentContext = UIGraphicsGetCurrentContext();
     UIImage *logoImg = [UIImage imageNamed:@"logo.png"];
     CGRect imageRect = CGRectMake(bounds.size.width / 4.0,
                                  bounds.size.height / 4.0,
                                  bounds.size.width / 2.0,
                                  bounds.size.height / 2.0);
-    [logoImg drawInRect: imageRect];
-    NSLog(@"imageRect");
-    NSLog(@"origin.x = %.2f, origin.y = %.2f", imageRect.origin.x, imageRect.origin.y);
-    NSLog(@"size.width = %.2f, size.height = %.2f", imageRect.size.width, imageRect.size.height);
     
-    NSLog(@"framRect");
-    NSLog(@"origin.x = %.2f, origin.y = %.2f", bounds.origin.x, bounds.origin.y);
-    NSLog(@"size.width = %.2f, size.height = %.2f", bounds.size.width, bounds.size.height);
+    //save context stage
+    CGContextSaveGState(currentContext);
+    
+    //set blur
+    CGContextSetShadow(currentContext, CGSizeMake(4, 7), 3);
+    
+    //draw blur image
+    [logoImg drawInRect: imageRect];
+    
+    //finish blur
+    CGContextRestoreGState(currentContext);
 
 }
 
