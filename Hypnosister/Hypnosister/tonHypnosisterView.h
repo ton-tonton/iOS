@@ -10,4 +10,6 @@
 
 @interface tonHypnosisterView : UIView
 
+@property (strong, nonatomic) UIColor *circleColor;
+
 @end
