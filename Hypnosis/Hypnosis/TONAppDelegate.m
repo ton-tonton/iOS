@@ -7,13 +7,26 @@
 //
 
 #import "TONAppDelegate.h"
+#import "TONHypnosisViewController.h"
+#import "TONReminderViewController.h"
 
 @implementation TONAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    TONHypnosisViewController *hvc = [[TONHypnosisViewController alloc] init];
+    
+    // This will get a pointer to an object that represents the app bundle
+    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    // Look in the appBundle for the file TONReminderViewController.xib
+    TONReminderViewController *rvc = [[TONReminderViewController alloc] initWithNibName:@"TONReminderViewController"
+                                                                                 bundle:appBundle];
+    self.window.rootViewController = rvc;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
