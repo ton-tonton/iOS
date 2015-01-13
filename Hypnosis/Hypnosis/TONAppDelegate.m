@@ -18,14 +18,10 @@
     
     // Override point for customization after application launch.
     TONHypnosisViewController *hvc = [[TONHypnosisViewController alloc] init];
-    
-    // This will get a pointer to an object that represents the app bundle
-    NSBundle *appBundle = [NSBundle mainBundle];
-    
+
     // Look in the appBundle for the file TONReminderViewController.xib
-    TONReminderViewController *rvc = [[TONReminderViewController alloc] initWithNibName:@"TONReminderViewController"
+    TONReminderViewController *rvc = [[TONReminderViewController alloc] init];
     
-                                                                                 bundle:appBundle];
     // Init tab bar controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[hvc, rvc];

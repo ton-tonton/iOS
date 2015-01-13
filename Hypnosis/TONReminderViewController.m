@@ -33,8 +33,18 @@
 
 - (IBAction)addReminder:(id)sender
 {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd 'at' HH:mm:ss"];
+    
     NSDate *date = self.datePicker.date;
-    NSLog(@"%@", date);
+    
+    NSLog(@"%@", [dateFormatter stringFromDate:date]);
+    
+    UILocalNotification *note = [[UILocalNotification alloc] init];
+    note.alertBody = @"Hypnotize me!";
+    note.fireDate = date;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:note];
 }
 
 @end
