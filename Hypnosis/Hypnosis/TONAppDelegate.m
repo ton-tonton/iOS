@@ -24,8 +24,13 @@
     
     // Look in the appBundle for the file TONReminderViewController.xib
     TONReminderViewController *rvc = [[TONReminderViewController alloc] initWithNibName:@"TONReminderViewController"
+    
                                                                                  bundle:appBundle];
-    self.window.rootViewController = rvc;
+    // Init tab bar controller
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[hvc, rvc];
+    
+    self.window.rootViewController = tabBarController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
