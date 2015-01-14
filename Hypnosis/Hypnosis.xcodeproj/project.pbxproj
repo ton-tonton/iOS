@@ -38,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C02C5961A64EA0500B7AA61 /* TONReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TONReminderViewController.h; path = ../TONReminderViewController.h; sourceTree = "<group>"; };
-		1C02C5971A64EA0500B7AA61 /* TONReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TONReminderViewController.m; path = ../TONReminderViewController.m; sourceTree = "<group>"; };
+		1C02C5961A64EA0500B7AA61 /* TONReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONReminderViewController.h; sourceTree = "<group>"; };
+		1C02C5971A64EA0500B7AA61 /* TONReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONReminderViewController.m; sourceTree = "<group>"; };
 		1C02C5991A64EB2900B7AA61 /* TONReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TONReminderViewController.xib; sourceTree = "<group>"; };
 		1C05547E1A66526E00D4E680 /* TONQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONQuizViewController.h; sourceTree = "<group>"; };
 		1C05547F1A66526E00D4E680 /* TONQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONQuizViewController.m; sourceTree = "<group>"; };

@@ -33,6 +33,8 @@
         // Create two arrays filled with questions and answers
         // and make the pointers point to them
         
+        self.tabBarItem.title = @"Quiz";
+        
         self.questions = @[@"From what is cognac made?",
                            @"What is 7+7?",
                            @"What is the capital of Vermont?"];

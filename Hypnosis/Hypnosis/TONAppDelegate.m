@@ -9,6 +9,7 @@
 #import "TONAppDelegate.h"
 #import "TONHypnosisViewController.h"
 #import "TONReminderViewController.h"
+#import "TONQuizViewController.h"
 
 @implementation TONAppDelegate
 
@@ -18,13 +19,12 @@
     
     // Override point for customization after application launch.
     TONHypnosisViewController *hvc = [[TONHypnosisViewController alloc] init];
-
-    // Look in the appBundle for the file TONReminderViewController.xib
     TONReminderViewController *rvc = [[TONReminderViewController alloc] init];
+    TONQuizViewController *qvc = [[TONQuizViewController alloc] init];
     
     // Init tab bar controller
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[hvc, rvc];
+    tabBarController.viewControllers = @[hvc, rvc, qvc];
     
     self.window.rootViewController = tabBarController;
     
