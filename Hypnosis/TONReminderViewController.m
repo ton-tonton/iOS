@@ -31,12 +31,26 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"TONReminderViewController laoded its view.");
+}
+
 - (IBAction)addReminder:(id)sender
 {
+    NSDate *date = self.datePicker.date;
+    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd 'at' HH:mm:ss"];
     
-    NSDate *date = self.datePicker.date;
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSUInteger calendarUnit = (NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit |
+                               NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit);
+    NSDateComponents *dateComps = [calendar components:calendarUnit fromDate:date];
+    [dateComps setSecond:0];
+    
+    date = [calendar dateFromComponents:dateComps];
     
     NSLog(@"%@", [dateFormatter stringFromDate:date]);
     

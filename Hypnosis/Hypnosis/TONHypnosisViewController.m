@@ -39,4 +39,10 @@
     self.view = backgroundView;
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"TONHypnosisViewController laoded its view.");
+}
+
 @end
