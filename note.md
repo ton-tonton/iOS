@@ -7,12 +7,12 @@
 - Frame store value for variables.
 - LIFO
 - Example
-> `main()` run.
-... The *main frame* put to stack.
-... `main()` call `method()`.
-... *method frame* put to stack.
-... `method()` finished, pop off *method frame* and destroyed.
-... `main()` finished, pop off *main frame* and destroyed.
+    ... `main()` run.
+    ... The *main frame* put to stack.
+    ... `main()` call `method()`.
+    ... *method frame* put to stack.
+    ... `method()` finished, pop off *method frame* and destroyed.
+    ... `main()` finished, pop off *main frame* and destroyed.
 
 
 ##The Heap
