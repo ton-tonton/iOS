@@ -11,6 +11,7 @@
 		1C02C59A1A64EB2900B7AA61 /* TONReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C02C5991A64EB2900B7AA61 /* TONReminderViewController.xib */; };
 		1C0554811A66526E00D4E680 /* TONQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C05547F1A66526E00D4E680 /* TONQuizViewController.m */; };
 		1C0554821A66526E00D4E680 /* TONQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0554801A66526E00D4E680 /* TONQuizViewController.xib */; };
+		1C0554841A665ABA00D4E680 /* TONHypnosisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C0554831A665ABA00D4E680 /* TONHypnosisViewController.xib */; };
 		1CE365CB1A63CF7100892047 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE365CA1A63CF7100892047 /* Foundation.framework */; };
 		1CE365CD1A63CF7100892047 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE365CC1A63CF7100892047 /* CoreGraphics.framework */; };
 		1CE365CF1A63CF7100892047 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE365CE1A63CF7100892047 /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 		1C05547E1A66526E00D4E680 /* TONQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONQuizViewController.h; sourceTree = "<group>"; };
 		1C05547F1A66526E00D4E680 /* TONQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONQuizViewController.m; sourceTree = "<group>"; };
 		1C0554801A66526E00D4E680 /* TONQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TONQuizViewController.xib; sourceTree = "<group>"; };
+		1C0554831A665ABA00D4E680 /* TONHypnosisViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TONHypnosisViewController.xib; sourceTree = "<group>"; };
 		1CE365C71A63CF7100892047 /* Hypnosis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hypnosis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE365CA1A63CF7100892047 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1CE365CC1A63CF7100892047 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +135,7 @@
 				1CE365FA1A63CF9800892047 /* TONHypnosisView.m */,
 				1CE365FC1A63D02700892047 /* TONHypnosisViewController.h */,
 				1CE365FD1A63D02700892047 /* TONHypnosisViewController.m */,
+				1C0554831A665ABA00D4E680 /* TONHypnosisViewController.xib */,
 				1CE365D91A63CF7100892047 /* TONAppDelegate.h */,
 				1CE365DA1A63CF7100892047 /* TONAppDelegate.m */,
 				1CE365DC1A63CF7100892047 /* Images.xcassets */,
@@ -249,6 +252,7 @@
 				1C02C59A1A64EB2900B7AA61 /* TONReminderViewController.xib in Resources */,
 				1CE365D51A63CF7100892047 /* InfoPlist.strings in Resources */,
 				1CE365DD1A63CF7100892047 /* Images.xcassets in Resources */,
+				1C0554841A665ABA00D4E680 /* TONHypnosisViewController.xib in Resources */,
 				1C0554821A66526E00D4E680 /* TONQuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

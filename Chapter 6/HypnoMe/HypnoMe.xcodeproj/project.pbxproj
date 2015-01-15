@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CD22E921A677EB200BF887B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD22E911A677EB200BF887B /* Foundation.framework */; };
+		1CD22E941A677EB200BF887B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD22E931A677EB200BF887B /* CoreGraphics.framework */; };
+		1CD22E961A677EB200BF887B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD22E951A677EB200BF887B /* UIKit.framework */; };
+		1CD22E9C1A677EB200BF887B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CD22E9A1A677EB200BF887B /* InfoPlist.strings */; };
+		1CD22E9E1A677EB200BF887B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD22E9D1A677EB200BF887B /* main.m */; };
+		1CD22EA21A677EB200BF887B /* TONAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD22EA11A677EB200BF887B /* TONAppDelegate.m */; };
+		1CD22EA41A677EB200BF887B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD22EA31A677EB200BF887B /* Images.xcassets */; };
+		1CD22EAB1A677EB200BF887B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD22EAA1A677EB200BF887B /* XCTest.framework */; };
+		1CD22EAC1A677EB200BF887B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD22E911A677EB200BF887B /* Foundation.framework */; };
+		1CD22EAD1A677EB200BF887B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD22E951A677EB200BF887B /* UIKit.framework */; };
+		1CD22EB51A677EB200BF887B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CD22EB31A677EB200BF887B /* InfoPlist.strings */; };
+		1CD22EB71A677EB200BF887B /* HypnoMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD22EB61A677EB200BF887B /* HypnoMeTests.m */; };
+		1CD22EC51A677F6900BF887B /* TONHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD22EC41A677F6900BF887B /* TONHypnosisView.m */; };
+		1CD22EC81A6780A400BF887B /* TONHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD22EC71A6780A400BF887B /* TONHypnosisViewController.m */; };
+		1CD22ECB1A67959000BF887B /* TONReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD22ECA1A67959000BF887B /* TONReminderViewController.m */; };
+		1CD22ECD1A67965D00BF887B /* TONReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CD22ECC1A67965D00BF887B /* TONReminderViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CD22EAE1A677EB200BF887B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CD22E861A677EB200BF887B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CD22E8D1A677EB200BF887B;
+			remoteInfo = HypnoMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CD22E8E1A677EB200BF887B /* HypnoMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypnoMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD22E911A677EB200BF887B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1CD22E931A677EB200BF887B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1CD22E951A677EB200BF887B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1CD22E991A677EB200BF887B /* HypnoMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoMe-Info.plist"; sourceTree = "<group>"; };
+		1CD22E9B1A677EB200BF887B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CD22E9D1A677EB200BF887B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CD22E9F1A677EB200BF887B /* HypnoMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HypnoMe-Prefix.pch"; sourceTree = "<group>"; };
+		1CD22EA01A677EB200BF887B /* TONAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TONAppDelegate.h; sourceTree = "<group>"; };
+		1CD22EA11A677EB200BF887B /* TONAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TONAppDelegate.m; sourceTree = "<group>"; };
+		1CD22EA31A677EB200BF887B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1CD22EA91A677EB200BF887B /* HypnoMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypnoMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD22EAA1A677EB200BF887B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1CD22EB21A677EB200BF887B /* HypnoMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoMeTests-Info.plist"; sourceTree = "<group>"; };
+		1CD22EB41A677EB200BF887B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CD22EB61A677EB200BF887B /* HypnoMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoMeTests.m; sourceTree = "<group>"; };
+		1CD22EC31A677F6900BF887B /* TONHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONHypnosisView.h; sourceTree = "<group>"; };
+		1CD22EC41A677F6900BF887B /* TONHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONHypnosisView.m; sourceTree = "<group>"; };
+		1CD22EC61A6780A400BF887B /* TONHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONHypnosisViewController.h; sourceTree = "<group>"; };
+		1CD22EC71A6780A400BF887B /* TONHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONHypnosisViewController.m; sourceTree = "<group>"; };
+		1CD22EC91A67959000BF887B /* TONReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONReminderViewController.h; sourceTree = "<group>"; };
+		1CD22ECA1A67959000BF887B /* TONReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONReminderViewController.m; sourceTree = "<group>"; };
+		1CD22ECC1A67965D00BF887B /* TONReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TONReminderViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CD22E8B1A677EB200BF887B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD22E941A677EB200BF887B /* CoreGraphics.framework in Frameworks */,
+				1CD22E961A677EB200BF887B /* UIKit.framework in Frameworks */,
+				1CD22E921A677EB200BF887B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD22EA61A677EB200BF887B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD22EAB1A677EB200BF887B /* XCTest.framework in Frameworks */,
+				1CD22EAD1A677EB200BF887B /* UIKit.framework in Frameworks */,
+				1CD22EAC1A677EB200BF887B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CD22E851A677EB200BF887B = {
+			isa = PBXGroup;
+			children = (
+				1CD22E971A677EB200BF887B /* HypnoMe */,
+				1CD22EB01A677EB200BF887B /* HypnoMeTests */,
+				1CD22E901A677EB200BF887B /* Frameworks */,
+				1CD22E8F1A677EB200BF887B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CD22E8F1A677EB200BF887B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CD22E8E1A677EB200BF887B /* HypnoMe.app */,
+				1CD22EA91A677EB200BF887B /* HypnoMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CD22E901A677EB200BF887B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CD22E911A677EB200BF887B /* Foundation.framework */,
+				1CD22E931A677EB200BF887B /* CoreGraphics.framework */,
+				1CD22E951A677EB200BF887B /* UIKit.framework */,
+				1CD22EAA1A677EB200BF887B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CD22E971A677EB200BF887B /* HypnoMe */ = {
+			isa = PBXGroup;
+			children = (
+				1CD22EC31A677F6900BF887B /* TONHypnosisView.h */,
+				1CD22EC41A677F6900BF887B /* TONHypnosisView.m */,
+				1CD22EC61A6780A400BF887B /* TONHypnosisViewController.h */,
+				1CD22EC71A6780A400BF887B /* TONHypnosisViewController.m */,
+				1CD22EC91A67959000BF887B /* TONReminderViewController.h */,
+				1CD22ECA1A67959000BF887B /* TONReminderViewController.m */,
+				1CD22ECC1A67965D00BF887B /* TONReminderViewController.xib */,
+				1CD22EA01A677EB200BF887B /* TONAppDelegate.h */,
+				1CD22EA11A677EB200BF887B /* TONAppDelegate.m */,
+				1CD22EA31A677EB200BF887B /* Images.xcassets */,
+				1CD22E981A677EB200BF887B /* Supporting Files */,
+			);
+			path = HypnoMe;
+			sourceTree = "<group>";
+		};
+		1CD22E981A677EB200BF887B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CD22E991A677EB200BF887B /* HypnoMe-Info.plist */,
+				1CD22E9A1A677EB200BF887B /* InfoPlist.strings */,
+				1CD22E9D1A677EB200BF887B /* main.m */,
+				1CD22E9F1A677EB200BF887B /* HypnoMe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CD22EB01A677EB200BF887B /* HypnoMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CD22EB61A677EB200BF887B /* HypnoMeTests.m */,
+				1CD22EB11A677EB200BF887B /* Supporting Files */,
+			);
+			path = HypnoMeTests;
+			sourceTree = "<group>";
+		};
+		1CD22EB11A677EB200BF887B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CD22EB21A677EB200BF887B /* HypnoMeTests-Info.plist */,
+				1CD22EB31A677EB200BF887B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CD22E8D1A677EB200BF887B /* HypnoMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD22EBA1A677EB200BF887B /* Build configuration list for PBXNativeTarget "HypnoMe" */;
+			buildPhases = (
+				1CD22E8A1A677EB200BF887B /* Sources */,
+				1CD22E8B1A677EB200BF887B /* Frameworks */,
+				1CD22E8C1A677EB200BF887B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HypnoMe;
+			productName = HypnoMe;
+			productReference = 1CD22E8E1A677EB200BF887B /* HypnoMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CD22EA81A677EB200BF887B /* HypnoMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD22EBD1A677EB200BF887B /* Build configuration list for PBXNativeTarget "HypnoMeTests" */;
+			buildPhases = (
+				1CD22EA51A677EB200BF887B /* Sources */,
+				1CD22EA61A677EB200BF887B /* Frameworks */,
+				1CD22EA71A677EB200BF887B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CD22EAF1A677EB200BF887B /* PBXTargetDependency */,
+			);
+			name = HypnoMeTests;
+			productName = HypnoMeTests;
+			productReference = 1CD22EA91A677EB200BF887B /* HypnoMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CD22E861A677EB200BF887B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TON;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = pddk;
+				TargetAttributes = {
+					1CD22EA81A677EB200BF887B = {
+						TestTargetID = 1CD22E8D1A677EB200BF887B;
+					};
+				};
+			};
+			buildConfigurationList = 1CD22E891A677EB200BF887B /* Build configuration list for PBXProject "HypnoMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1CD22E851A677EB200BF887B;
+			productRefGroup = 1CD22E8F1A677EB200BF887B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CD22E8D1A677EB200BF887B /* HypnoMe */,
+				1CD22EA81A677EB200BF887B /* HypnoMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CD22E8C1A677EB200BF887B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD22ECD1A67965D00BF887B /* TONReminderViewController.xib in Resources */,
+				1CD22E9C1A677EB200BF887B /* InfoPlist.strings in Resources */,
+				1CD22EA41A677EB200BF887B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD22EA71A677EB200BF887B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD22EB51A677EB200BF887B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CD22E8A1A677EB200BF887B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD22EA21A677EB200BF887B /* TONAppDelegate.m in Sources */,
+				1CD22EC51A677F6900BF887B /* TONHypnosisView.m in Sources */,
+				1CD22E9E1A677EB200BF887B /* main.m in Sources */,
+				1CD22EC81A6780A400BF887B /* TONHypnosisViewController.m in Sources */,
+				1CD22ECB1A67959000BF887B /* TONReminderViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD22EA51A677EB200BF887B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD22EB71A677EB200BF887B /* HypnoMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CD22EAF1A677EB200BF887B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CD22E8D1A677EB200BF887B /* HypnoMe */;
+			targetProxy = 1CD22EAE1A677EB200BF887B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CD22E9A1A677EB200BF887B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD22E9B1A677EB200BF887B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CD22EB31A677EB200BF887B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD22EB41A677EB200BF887B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CD22EB81A677EB200BF887B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1CD22EB91A677EB200BF887B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CD22EBB1A677EB200BF887B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HypnoMe/HypnoMe-Prefix.pch";
+				INFOPLIST_FILE = "HypnoMe/HypnoMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1CD22EBC1A677EB200BF887B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HypnoMe/HypnoMe-Prefix.pch";
+				INFOPLIST_FILE = "HypnoMe/HypnoMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1CD22EBE1A677EB200BF887B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HypnoMe.app/HypnoMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HypnoMe/HypnoMe-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HypnoMeTests/HypnoMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1CD22EBF1A677EB200BF887B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HypnoMe.app/HypnoMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HypnoMe/HypnoMe-Prefix.pch";
+				INFOPLIST_FILE = "HypnoMeTests/HypnoMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CD22E891A677EB200BF887B /* Build configuration list for PBXProject "HypnoMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD22EB81A677EB200BF887B /* Debug */,
+				1CD22EB91A677EB200BF887B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CD22EBA1A677EB200BF887B /* Build configuration list for PBXNativeTarget "HypnoMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD22EBB1A677EB200BF887B /* Debug */,
+				1CD22EBC1A677EB200BF887B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CD22EBD1A677EB200BF887B /* Build configuration list for PBXNativeTarget "HypnoMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD22EBE1A677EB200BF887B /* Debug */,
+				1CD22EBF1A677EB200BF887B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CD22E861A677EB200BF887B /* Project object */;
+}

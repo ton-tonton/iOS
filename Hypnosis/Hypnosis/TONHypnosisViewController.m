@@ -17,32 +17,51 @@
     self = [super initWithNibName:nibNameOrNil
                            bundle:nibBundleOrNil];
     if (self) {
-        // Set the tab bar item's title
+        // Set the tabbar item
         self.tabBarItem.title = @"Hypnotize";
+        self.tabBarItem.image = [UIImage imageNamed:@"Hypno.png"];
         
-        // Create a UIImage from a file
-        // This will use Hypno@2x.png on retina display devices
-        UIImage *i = [UIImage imageNamed:@"Hypno.png"];
-        
-        // Put that image on the tab bar item
-        self.tabBarItem.image = i;
+        TONHypnosisView *bg = [[TONHypnosisView alloc] init];
+        [self.view addSubview:bg];
     }
+    
     return self;
 }
 
-- (void)loadView
+/*- (void)loadView
 {
     // Create a view
     TONHypnosisView *backgroundView = [[TONHypnosisView alloc] init];
     
     // Set it as *the* view of this view controller
-    self.view = backgroundView;
-}
+    //self.view = backgroundView;
+    [self.view addSubview:backgroundView];
+}*/
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     NSLog(@"TONHypnosisViewController laoded its view.");
+
+}
+
+- (void)changeColor:(id)sender
+{
+    TONHypnosisView *hypnosisView = (TONHypnosisView *)self.view;
+    UISegmentedControl *s = sender;
+    
+    int index = [s selectedSegmentIndex];
+    NSLog(@"%d", index);
+    
+    if (index == 0) {
+        hypnosisView.circleColor = [UIColor redColor];
+    }
+    else if (index == 1) {
+        hypnosisView.circleColor = [UIColor greenColor];
+    }
+    else if (index == 2) {
+        hypnosisView.circleColor = [UIColor blueColor];
+    }
 }
 
 @end

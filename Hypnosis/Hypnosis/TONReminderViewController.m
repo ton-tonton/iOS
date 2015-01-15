@@ -22,10 +22,8 @@
     self = [super initWithNibName:nibNameOrNil
                            bundle:nibBundleOrNil];
     if (self) {
-        // Set the tab bar item's title
+        // Set the tabbar item
         self.tabBarItem.title = @"Reminder";
-        
-        // Put that image on the tab bar item
         self.tabBarItem.image = [UIImage imageNamed:@"Time.png"];
     }
     return self;
@@ -35,6 +33,12 @@
 {
     [super viewDidLoad];
     NSLog(@"TONReminderViewController laoded its view.");
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
 }
 
 - (IBAction)addReminder:(id)sender
