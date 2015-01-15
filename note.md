@@ -22,3 +22,18 @@
 - use pointer to track where object are stored in the heap.
 
 ---
+
+#View Controller
+
+###loadView
+- Overridden to create a view controller's view.
+
+###viewDidLoad
+- Overridden to configure views created by loading a NIB file.
+- Called after the view of a view controller is created.
+- Run one time.
+
+###viewWillAppear
+- Overridden to configure views created by loading a NIB file.
+- Called every time your view controller is moved on screen.
+
