@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CC194951A7385D4005EB508 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194941A7385D4005EB508 /* Foundation.framework */; };
+		1CC194971A7385D4005EB508 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194961A7385D4005EB508 /* CoreGraphics.framework */; };
+		1CC194991A7385D4005EB508 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194981A7385D4005EB508 /* UIKit.framework */; };
+		1CC1949F1A7385D4005EB508 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CC1949D1A7385D4005EB508 /* InfoPlist.strings */; };
+		1CC194A11A7385D4005EB508 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC194A01A7385D4005EB508 /* main.m */; };
+		1CC194A51A7385D4005EB508 /* TONAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC194A41A7385D4005EB508 /* TONAppDelegate.m */; };
+		1CC194A71A7385D4005EB508 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC194A61A7385D4005EB508 /* Images.xcassets */; };
+		1CC194AE1A7385D4005EB508 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194AD1A7385D4005EB508 /* XCTest.framework */; };
+		1CC194AF1A7385D4005EB508 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194941A7385D4005EB508 /* Foundation.framework */; };
+		1CC194B01A7385D4005EB508 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194981A7385D4005EB508 /* UIKit.framework */; };
+		1CC194B81A7385D4005EB508 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CC194B61A7385D4005EB508 /* InfoPlist.strings */; };
+		1CC194BA1A7385D4005EB508 /* silverChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC194B91A7385D4005EB508 /* silverChallengeTests.m */; };
+		1CC194C51A7385F8005EB508 /* TONHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC194C41A7385F8005EB508 /* TONHypnosisView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CC194B11A7385D4005EB508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CC194891A7385D4005EB508 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CC194901A7385D4005EB508;
+			remoteInfo = silverChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CC194911A7385D4005EB508 /* silverChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = silverChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC194941A7385D4005EB508 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1CC194961A7385D4005EB508 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1CC194981A7385D4005EB508 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1CC1949C1A7385D4005EB508 /* silverChallenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "silverChallenge-Info.plist"; sourceTree = "<group>"; };
+		1CC1949E1A7385D4005EB508 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CC194A01A7385D4005EB508 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CC194A21A7385D4005EB508 /* silverChallenge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "silverChallenge-Prefix.pch"; sourceTree = "<group>"; };
+		1CC194A31A7385D4005EB508 /* TONAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TONAppDelegate.h; sourceTree = "<group>"; };
+		1CC194A41A7385D4005EB508 /* TONAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TONAppDelegate.m; sourceTree = "<group>"; };
+		1CC194A61A7385D4005EB508 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1CC194AC1A7385D4005EB508 /* silverChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = silverChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC194AD1A7385D4005EB508 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1CC194B51A7385D4005EB508 /* silverChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "silverChallengeTests-Info.plist"; sourceTree = "<group>"; };
+		1CC194B71A7385D4005EB508 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CC194B91A7385D4005EB508 /* silverChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = silverChallengeTests.m; sourceTree = "<group>"; };
+		1CC194C31A7385F8005EB508 /* TONHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONHypnosisView.h; sourceTree = "<group>"; };
+		1CC194C41A7385F8005EB508 /* TONHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONHypnosisView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CC1948E1A7385D4005EB508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC194971A7385D4005EB508 /* CoreGraphics.framework in Frameworks */,
+				1CC194991A7385D4005EB508 /* UIKit.framework in Frameworks */,
+				1CC194951A7385D4005EB508 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC194A91A7385D4005EB508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC194AE1A7385D4005EB508 /* XCTest.framework in Frameworks */,
+				1CC194B01A7385D4005EB508 /* UIKit.framework in Frameworks */,
+				1CC194AF1A7385D4005EB508 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CC194881A7385D4005EB508 = {
+			isa = PBXGroup;
+			children = (
+				1CC1949A1A7385D4005EB508 /* silverChallenge */,
+				1CC194B31A7385D4005EB508 /* silverChallengeTests */,
+				1CC194931A7385D4005EB508 /* Frameworks */,
+				1CC194921A7385D4005EB508 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CC194921A7385D4005EB508 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CC194911A7385D4005EB508 /* silverChallenge.app */,
+				1CC194AC1A7385D4005EB508 /* silverChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CC194931A7385D4005EB508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CC194941A7385D4005EB508 /* Foundation.framework */,
+				1CC194961A7385D4005EB508 /* CoreGraphics.framework */,
+				1CC194981A7385D4005EB508 /* UIKit.framework */,
+				1CC194AD1A7385D4005EB508 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CC1949A1A7385D4005EB508 /* silverChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				1CC194C31A7385F8005EB508 /* TONHypnosisView.h */,
+				1CC194C41A7385F8005EB508 /* TONHypnosisView.m */,
+				1CC194A31A7385D4005EB508 /* TONAppDelegate.h */,
+				1CC194A41A7385D4005EB508 /* TONAppDelegate.m */,
+				1CC194A61A7385D4005EB508 /* Images.xcassets */,
+				1CC1949B1A7385D4005EB508 /* Supporting Files */,
+			);
+			path = silverChallenge;
+			sourceTree = "<group>";
+		};
+		1CC1949B1A7385D4005EB508 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CC1949C1A7385D4005EB508 /* silverChallenge-Info.plist */,
+				1CC1949D1A7385D4005EB508 /* InfoPlist.strings */,
+				1CC194A01A7385D4005EB508 /* main.m */,
+				1CC194A21A7385D4005EB508 /* silverChallenge-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CC194B31A7385D4005EB508 /* silverChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC194B91A7385D4005EB508 /* silverChallengeTests.m */,
+				1CC194B41A7385D4005EB508 /* Supporting Files */,
+			);
+			path = silverChallengeTests;
+			sourceTree = "<group>";
+		};
+		1CC194B41A7385D4005EB508 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CC194B51A7385D4005EB508 /* silverChallengeTests-Info.plist */,
+				1CC194B61A7385D4005EB508 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CC194901A7385D4005EB508 /* silverChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC194BD1A7385D4005EB508 /* Build configuration list for PBXNativeTarget "silverChallenge" */;
+			buildPhases = (
+				1CC1948D1A7385D4005EB508 /* Sources */,
+				1CC1948E1A7385D4005EB508 /* Frameworks */,
+				1CC1948F1A7385D4005EB508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = silverChallenge;
+			productName = silverChallenge;
+			productReference = 1CC194911A7385D4005EB508 /* silverChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CC194AB1A7385D4005EB508 /* silverChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC194C01A7385D4005EB508 /* Build configuration list for PBXNativeTarget "silverChallengeTests" */;
+			buildPhases = (
+				1CC194A81A7385D4005EB508 /* Sources */,
+				1CC194A91A7385D4005EB508 /* Frameworks */,
+				1CC194AA1A7385D4005EB508 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC194B21A7385D4005EB508 /* PBXTargetDependency */,
+			);
+			name = silverChallengeTests;
+			productName = silverChallengeTests;
+			productReference = 1CC194AC1A7385D4005EB508 /* silverChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CC194891A7385D4005EB508 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TON;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = pddk;
+				TargetAttributes = {
+					1CC194AB1A7385D4005EB508 = {
+						TestTargetID = 1CC194901A7385D4005EB508;
+					};
+				};
+			};
+			buildConfigurationList = 1CC1948C1A7385D4005EB508 /* Build configuration list for PBXProject "silverChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1CC194881A7385D4005EB508;
+			productRefGroup = 1CC194921A7385D4005EB508 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CC194901A7385D4005EB508 /* silverChallenge */,
+				1CC194AB1A7385D4005EB508 /* silverChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CC1948F1A7385D4005EB508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC1949F1A7385D4005EB508 /* InfoPlist.strings in Resources */,
+				1CC194A71A7385D4005EB508 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC194AA1A7385D4005EB508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC194B81A7385D4005EB508 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CC1948D1A7385D4005EB508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC194A51A7385D4005EB508 /* TONAppDelegate.m in Sources */,
+				1CC194C51A7385F8005EB508 /* TONHypnosisView.m in Sources */,
+				1CC194A11A7385D4005EB508 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CC194A81A7385D4005EB508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC194BA1A7385D4005EB508 /* silverChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CC194B21A7385D4005EB508 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CC194901A7385D4005EB508 /* silverChallenge */;
+			targetProxy = 1CC194B11A7385D4005EB508 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CC1949D1A7385D4005EB508 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC1949E1A7385D4005EB508 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CC194B61A7385D4005EB508 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC194B71A7385D4005EB508 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CC194BB1A7385D4005EB508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1CC194BC1A7385D4005EB508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CC194BE1A7385D4005EB508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "silverChallenge/silverChallenge-Prefix.pch";
+				INFOPLIST_FILE = "silverChallenge/silverChallenge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1CC194BF1A7385D4005EB508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "silverChallenge/silverChallenge-Prefix.pch";
+				INFOPLIST_FILE = "silverChallenge/silverChallenge-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1CC194C11A7385D4005EB508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/silverChallenge.app/silverChallenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "silverChallenge/silverChallenge-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "silverChallengeTests/silverChallengeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1CC194C21A7385D4005EB508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/silverChallenge.app/silverChallenge";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "silverChallenge/silverChallenge-Prefix.pch";
+				INFOPLIST_FILE = "silverChallengeTests/silverChallengeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CC1948C1A7385D4005EB508 /* Build configuration list for PBXProject "silverChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC194BB1A7385D4005EB508 /* Debug */,
+				1CC194BC1A7385D4005EB508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC194BD1A7385D4005EB508 /* Build configuration list for PBXNativeTarget "silverChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC194BE1A7385D4005EB508 /* Debug */,
+				1CC194BF1A7385D4005EB508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CC194C01A7385D4005EB508 /* Build configuration list for PBXNativeTarget "silverChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC194C11A7385D4005EB508 /* Debug */,
+				1CC194C21A7385D4005EB508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CC194891A7385D4005EB508 /* Project object */;
+}
