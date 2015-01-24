@@ -460,6 +460,7 @@
 				1CD22EBC1A677EB200BF887B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CD22EBD1A677EB200BF887B /* Build configuration list for PBXNativeTarget "HypnoMeTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +469,7 @@
 				1CD22EBF1A677EB200BF887B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
