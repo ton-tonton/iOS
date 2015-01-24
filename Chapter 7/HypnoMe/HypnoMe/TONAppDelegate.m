@@ -7,13 +7,24 @@
 //
 
 #import "TONAppDelegate.h"
+#import "TONHypnosisViewController.h"
+#import "TONReminderViewController.h"
 
 @implementation TONAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    UITabBarController *tabBar = [[UITabBarController alloc] init];
+    TONHypnosisViewController *hvc = [[TONHypnosisViewController alloc] init];
+    TONReminderViewController *rvc = [[TONReminderViewController alloc] init];
+    
+    tabBar.viewControllers = @[hvc, rvc];
+    
+    self.window.rootViewController = tabBar;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

@@ -9,7 +9,7 @@
 #import "TONHypnosisViewController.h"
 #import "TONHypnosisView.h"
 
-@interface TONHypnosisViewController ()
+@interface TONHypnosisViewController () <UITextFieldDelegate>
 
 @property (nonatomic) TONHypnosisView *hypnosis;
 
@@ -31,6 +31,15 @@
 
 - (void)loadView
 {
+    CGRect textFieldRect = CGRectMake(40, 70, 240, 30);
+    UITextField *textField = [[UITextField alloc] initWithFrame:textFieldRect];
+    
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.placeholder = @"Hypnotize me";
+    textField.returnKeyType = UIReturnKeyDone;
+    textField.delegate = self;
+    
+    [self.hypnosis addSubview:textField];
     self.view = self.hypnosis;
 }
 
@@ -38,34 +47,59 @@
 {
     [super viewDidLoad];
     NSLog(@"TONHypnosisViewController loaded its view.");
-    
-    //screen size
-    CGRect screenFrame = [[UIScreen mainScreen] applicationFrame];
-    //NSLog(@"bounds = %@", NSStringFromCGRect(screenFrame));
-    
-    //Creating segment control in navigation bar
-    UISegmentedControl *mainSegment = [[UISegmentedControl alloc] initWithItems:@[@"Red", @"Green", @"Blue"]];
-    mainSegment.frame = CGRectMake(0, 20, screenFrame.size.width, 40);
-    
-    [mainSegment addTarget:self action:@selector(mainSegmentControl:) forControlEvents: UIControlEventValueChanged];
-    [self.view addSubview:mainSegment];
 }
 
-- (void)mainSegmentControl:(UISegmentedControl *)segment
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    NSLog(@"%d", segment.selectedSegmentIndex);
-    if (segment.selectedSegmentIndex == 0)
-    {
-        self.hypnosis.circleColor = [UIColor redColor];
-    }
-    else if (segment.selectedSegmentIndex == 1)
-    {
-        self.hypnosis.circleColor = [UIColor greenColor];
-    }
-    else if (segment.selectedSegmentIndex == 2)
-    {
-        self.hypnosis.circleColor = [UIColor blueColor];
+    [self drawHypnoticMessage:textField.text];
+    textField.text = @"";
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+-(void)drawHypnoticMessage:(NSString *)message
+{
+    for (int i = 0; i < 20; i++) {
+        UILabel *messageLabel = [[UILabel alloc] init];
+        
+        //text properties
+        messageLabel.backgroundColor = [UIColor clearColor];
+        messageLabel.textColor = [UIColor whiteColor];
+        messageLabel.text = message;
+        
+        //label size relative to text size
+        [messageLabel sizeToFit];
+        
+        //random x, y within hypnosis view
+        int width = (int)(self.view.bounds.size.width - messageLabel.bounds.size.width);
+        int x = arc4random() % width;
+        
+        int height = (int)(self.view.bounds.size.height - messageLabel.bounds.size.height);
+        int y = arc4random() %height;
+        
+        CGRect frame = messageLabel.frame;
+        frame.origin = CGPointMake(x, y);
+        messageLabel.frame = frame;
+        
+        [self.view addSubview:messageLabel];
+        
+        //motion effect
+        UIInterpolatingMotionEffect *motionEffect = [[UIInterpolatingMotionEffect alloc]
+                                                     initWithKeyPath:@"center.x"
+                                                     type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        motionEffect.minimumRelativeValue = @(-25);
+        motionEffect.maximumRelativeValue = @(25);
+        [messageLabel addMotionEffect:motionEffect];
+        
+        motionEffect = [[UIInterpolatingMotionEffect alloc]
+                        initWithKeyPath:@"center.y"
+                        type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        motionEffect.minimumRelativeValue = @(-25);
+        motionEffect.maximumRelativeValue = @(25);
+        [messageLabel addMotionEffect:motionEffect];
     }
 }
+
 
 @end

@@ -19,6 +19,10 @@
 		1CC1946A1A7336F7005EB508 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194521A7336F7005EB508 /* UIKit.framework */; };
 		1CC194721A7336F7005EB508 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CC194701A7336F7005EB508 /* InfoPlist.strings */; };
 		1CC194741A7336F7005EB508 /* HypnoMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC194731A7336F7005EB508 /* HypnoMeTests.m */; };
+		1CC194841A73388E005EB508 /* TONHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1947E1A73388E005EB508 /* TONHypnosisView.m */; };
+		1CC194851A73388E005EB508 /* TONHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC194801A73388E005EB508 /* TONHypnosisViewController.m */; };
+		1CC194861A73388E005EB508 /* TONReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC194821A73388E005EB508 /* TONReminderViewController.m */; };
+		1CC194871A73388E005EB508 /* TONReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CC194831A73388E005EB508 /* TONReminderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		1CC1946F1A7336F7005EB508 /* HypnoMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoMeTests-Info.plist"; sourceTree = "<group>"; };
 		1CC194711A7336F7005EB508 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1CC194731A7336F7005EB508 /* HypnoMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoMeTests.m; sourceTree = "<group>"; };
+		1CC1947D1A73388E005EB508 /* TONHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONHypnosisView.h; sourceTree = "<group>"; };
+		1CC1947E1A73388E005EB508 /* TONHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONHypnosisView.m; sourceTree = "<group>"; };
+		1CC1947F1A73388E005EB508 /* TONHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONHypnosisViewController.h; sourceTree = "<group>"; };
+		1CC194801A73388E005EB508 /* TONHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONHypnosisViewController.m; sourceTree = "<group>"; };
+		1CC194811A73388E005EB508 /* TONReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONReminderViewController.h; sourceTree = "<group>"; };
+		1CC194821A73388E005EB508 /* TONReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONReminderViewController.m; sourceTree = "<group>"; };
+		1CC194831A73388E005EB508 /* TONReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TONReminderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,13 @@
 		1CC194541A7336F7005EB508 /* HypnoMe */ = {
 			isa = PBXGroup;
 			children = (
+				1CC1947D1A73388E005EB508 /* TONHypnosisView.h */,
+				1CC1947E1A73388E005EB508 /* TONHypnosisView.m */,
+				1CC1947F1A73388E005EB508 /* TONHypnosisViewController.h */,
+				1CC194801A73388E005EB508 /* TONHypnosisViewController.m */,
+				1CC194811A73388E005EB508 /* TONReminderViewController.h */,
+				1CC194821A73388E005EB508 /* TONReminderViewController.m */,
+				1CC194831A73388E005EB508 /* TONReminderViewController.xib */,
 				1CC1945D1A7336F7005EB508 /* TONAppDelegate.h */,
 				1CC1945E1A7336F7005EB508 /* TONAppDelegate.m */,
 				1CC194601A7336F7005EB508 /* Images.xcassets */,
@@ -220,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC194871A73388E005EB508 /* TONReminderViewController.xib in Resources */,
 				1CC194591A7336F7005EB508 /* InfoPlist.strings in Resources */,
 				1CC194611A7336F7005EB508 /* Images.xcassets in Resources */,
 			);
@@ -241,7 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CC1945F1A7336F7005EB508 /* TONAppDelegate.m in Sources */,
+				1CC194841A73388E005EB508 /* TONHypnosisView.m in Sources */,
 				1CC1945B1A7336F7005EB508 /* main.m in Sources */,
+				1CC194851A73388E005EB508 /* TONHypnosisViewController.m in Sources */,
+				1CC194861A73388E005EB508 /* TONReminderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
