@@ -16,7 +16,7 @@
 {
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             [[TONItemStore sharedStore] createItem];
         }
     }
@@ -35,7 +35,7 @@
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    NSArray *mySection = @[@"More than $50", @"other"];
+    NSArray *mySection = @[@"More than $50", @"Other"];
     return mySection[section];
 }
 
@@ -80,6 +80,11 @@
 {
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    
+    //add last row
+    UITableViewCell *lastCell = [[UITableViewCell alloc] init];
+    lastCell.textLabel.text = @"No more items!";
+    self.tableView.tableFooterView = lastCell;
 }
 
 -(void)viewDidAppear:(BOOL)animated
