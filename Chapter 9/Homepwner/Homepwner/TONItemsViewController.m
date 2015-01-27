@@ -99,6 +99,11 @@
     
 }
 
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"Remove";
+}
+
 -(IBAction)addNewItem:(id)sender
 {
     TONItem *newItem = [[TONItemStore sharedStore] createItem];
