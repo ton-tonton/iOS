@@ -84,6 +84,13 @@
     return cell;
 }
 
+//title for delete btn when in editing mode
+-(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return @"Remove";
+}
+
+//can be editing mode
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
@@ -96,6 +103,7 @@
     return YES;
 }
 
+//when editing mode, what to do
 -(void)tableView:(UITableView *)tableView
         commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
         forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -108,6 +116,7 @@
     }
 }
 
+//move row when in editing mode
 -(void)tableView:(UITableView *)tableView
         moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath
         toIndexPath:(NSIndexPath *)destinationIndexPath
@@ -116,9 +125,19 @@
     
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath
+//define destination to move
+-(NSIndexPath *)tableView:(UITableView *)tableView
+        targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath
+        toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
 {
-    return @"Remove";
+    NSInteger lastRow = [[[TONItemStore sharedStore] allItems] count];
+    NSInteger proposedDestinationRow = proposedDestinationIndexPath.row;
+    
+    if (proposedDestinationRow >= lastRow) {
+        return [NSIndexPath indexPathForRow:(lastRow - 1) inSection:proposedDestinationIndexPath.section];
+    }
+    
+    return proposedDestinationIndexPath;
 }
 
 -(IBAction)addNewItem:(id)sender
