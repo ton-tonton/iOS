@@ -73,6 +73,7 @@
     if ([items count] == 0) {
         
         cell.textLabel.text = @"No more item!";
+        cell.textLabel.textColor = [UIColor redColor];
         
     } else{
         
