@@ -21,11 +21,7 @@
 -(instancetype)init
 {
     self = [super initWithStyle:UITableViewStylePlain];
-    
-    /*if (self) {
-        
-    }*/
-    
+
     return self;
 }
 
@@ -65,7 +61,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[[TONItemStore sharedStore] allItems] count];
+    return [[[TONItemStore sharedStore] allItems] count] + 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView
@@ -73,10 +69,30 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
     NSArray *items = [[TONItemStore sharedStore] allItems];
-    TONItem *item = items[indexPath.row];
-    cell.textLabel.text = [item description];
+    
+    if ([items count] == 0) {
+        
+        cell.textLabel.text = @"No more item!";
+        
+    } else{
+        
+        TONItem *item = items[indexPath.row];
+        cell.textLabel.text = [item description];
+    }
     
     return cell;
+}
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if ([cell.textLabel.text isEqualToString:@"No more item!"]) {
+        
+        return NO;
+    }
+    
+    return YES;
 }
 
 -(void)tableView:(UITableView *)tableView
