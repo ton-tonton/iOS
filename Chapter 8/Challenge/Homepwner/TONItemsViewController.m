@@ -73,6 +73,10 @@
     
     TONItem *item = allItems[indexPath.row];
     cell.textLabel.text = [item description];
+    
+    //cell properties
+    cell.textLabel.font = [UIFont systemFontOfSize:20];
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 
@@ -85,6 +89,12 @@
     UITableViewCell *lastCell = [[UITableViewCell alloc] init];
     lastCell.textLabel.text = @"No more items!";
     self.tableView.tableFooterView = lastCell;
+    
+    //row propertie
+    self.tableView.rowHeight = 60;
+    
+    //bg
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg"]];
 }
 
 -(void)viewDidAppear:(BOOL)animated
