@@ -37,3 +37,6 @@
 - Overridden to configure views created by loading a NIB file.
 - Called every time your view controller is moved on screen.
 
+###viewWillDisappear
+- Overridden to set properties before view poped off.
+- Called every time your view controller is move off screen.
