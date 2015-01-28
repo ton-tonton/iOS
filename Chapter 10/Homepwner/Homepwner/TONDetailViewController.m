@@ -8,6 +8,7 @@
 
 #import "TONDetailViewController.h"
 #import "TONItem.h"
+#import "TONDateViewController.h"
 
 @interface TONDetailViewController () <UITextFieldDelegate>
 
@@ -65,6 +66,14 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
+}
+
+- (IBAction)changeDate:(id)sender
+{
+    TONDateViewController *dateViewController = [[TONDateViewController alloc] init];
+    dateViewController.item = self.item;
+    
+    [self.navigationController pushViewController:dateViewController animated:YES];
 }
 
 @end

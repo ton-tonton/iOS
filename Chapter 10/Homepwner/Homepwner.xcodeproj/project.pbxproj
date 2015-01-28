@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C69F2C21A78A01C00237FEF /* TONDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C69F2C01A78A01C00237FEF /* TONDetailViewController.m */; };
 		1C69F2C31A78A01C00237FEF /* TONDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C69F2C11A78A01C00237FEF /* TONDetailViewController.xib */; };
+		1C69F2C71A78E7FA00237FEF /* TONDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C69F2C51A78E7FA00237FEF /* TONDateViewController.m */; };
+		1C69F2C81A78E7FA00237FEF /* TONDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C69F2C61A78E7FA00237FEF /* TONDateViewController.xib */; };
 		1CC194D31A739036005EB508 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194D21A739036005EB508 /* Foundation.framework */; };
 		1CC194D51A739036005EB508 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194D41A739036005EB508 /* CoreGraphics.framework */; };
 		1CC194D71A739036005EB508 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC194D61A739036005EB508 /* UIKit.framework */; };
@@ -40,6 +42,9 @@
 		1C69F2BF1A78A01C00237FEF /* TONDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONDetailViewController.h; sourceTree = "<group>"; };
 		1C69F2C01A78A01C00237FEF /* TONDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONDetailViewController.m; sourceTree = "<group>"; };
 		1C69F2C11A78A01C00237FEF /* TONDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TONDetailViewController.xib; sourceTree = "<group>"; };
+		1C69F2C41A78E7FA00237FEF /* TONDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONDateViewController.h; sourceTree = "<group>"; };
+		1C69F2C51A78E7FA00237FEF /* TONDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONDateViewController.m; sourceTree = "<group>"; };
+		1C69F2C61A78E7FA00237FEF /* TONDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TONDateViewController.xib; sourceTree = "<group>"; };
 		1CC194CF1A739036005EB508 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC194D21A739036005EB508 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1CC194D41A739036005EB508 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +139,9 @@
 				1CC195081A739B68005EB508 /* TONItemStore.m */,
 				1CC195011A73935F005EB508 /* TONItemsViewController.h */,
 				1CC195021A73935F005EB508 /* TONItemsViewController.m */,
+				1C69F2C41A78E7FA00237FEF /* TONDateViewController.h */,
+				1C69F2C51A78E7FA00237FEF /* TONDateViewController.m */,
+				1C69F2C61A78E7FA00237FEF /* TONDateViewController.xib */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -243,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C69F2C81A78E7FA00237FEF /* TONDateViewController.xib in Resources */,
 				1CC194DD1A739036005EB508 /* InfoPlist.strings in Resources */,
 				1CC194E51A739036005EB508 /* Images.xcassets in Resources */,
 				1C69F2C31A78A01C00237FEF /* TONDetailViewController.xib in Resources */,
@@ -267,6 +276,7 @@
 				1CC195091A739B68005EB508 /* TONItemStore.m in Sources */,
 				1CC194E31A739036005EB508 /* TONAppDelegate.m in Sources */,
 				1CC195061A739737005EB508 /* TONItem.m in Sources */,
+				1C69F2C71A78E7FA00237FEF /* TONDateViewController.m in Sources */,
 				1C69F2C21A78A01C00237FEF /* TONDetailViewController.m in Sources */,
 				1CC195031A73935F005EB508 /* TONItemsViewController.m in Sources */,
 				1CC194DF1A739036005EB508 /* main.m in Sources */,
