@@ -81,7 +81,7 @@
     } else {
         imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     }
-    
+    imagePicker.allowsEditing = YES;
     imagePicker.delegate = self;
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
@@ -89,7 +89,7 @@
 -(void)imagePickerController:(UIImagePickerController *)picker
         didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    UIImage *image = info[UIImagePickerControllerEditedImage];
     [[TONImageStore sharedStroe] setImage:image forKey:self.item.imageKey];
     
     self.imageView.image = image;
