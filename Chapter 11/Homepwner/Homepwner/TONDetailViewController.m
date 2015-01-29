@@ -96,4 +96,12 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)removePicture:(id)sender
+{
+    if (self.imageView.image) {
+        self.imageView.image = nil;
+        [[TONImageStore sharedStroe] deleteImageForKey:self.item.imageKey];
+        
+    }
+}
 @end
