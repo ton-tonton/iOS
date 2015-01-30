@@ -9,10 +9,12 @@
 #import "TONDrawView.h"
 #import "TONLine.h"
 
-@interface TONDrawView ()
+@interface TONDrawView () <UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) NSMutableDictionary *linesInProgress;
 @property (nonatomic, strong) NSMutableArray *finishedLine;
+@property (nonatomic, strong) UIPanGestureRecognizer *moveRecognizer;
+
 @property (nonatomic, weak) TONLine *selectedLine;
 
 @end
@@ -52,6 +54,14 @@
                                                          initWithTarget:self
                                                          action:@selector(longPress:)];
         [self addGestureRecognizer:pressRecognizer];
+        
+        //panning line
+        self.moveRecognizer = [[UIPanGestureRecognizer alloc]
+                               initWithTarget:self
+                               action:@selector(moveLine:)];
+        self.moveRecognizer.delegate = self;
+        self.moveRecognizer.cancelsTouchesInView = NO;
+        [self addGestureRecognizer:self.moveRecognizer];
     }
     
     return self;
@@ -172,6 +182,16 @@
     [self setNeedsDisplay];
 }
 
+#pragma mark - Gesture recognize protocol
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    if (gestureRecognizer == self.moveRecognizer) {
+        return YES;
+    }
+    
+    return NO;
+}
+
 #pragma mark - Gesture recognize
 
 -(void)doubleTap:(UIGestureRecognizer *)gr
@@ -204,6 +224,49 @@
     }
     
     [self setNeedsDisplay];
+}
+
+-(void)longPress:(UIGestureRecognizer *)gr
+{
+    if (gr.state == UIGestureRecognizerStateBegan) {
+        
+        CGPoint point = [gr locationInView:self];
+        self.selectedLine = [self lineAtPoint:point];
+        
+        if (self.selectedLine) {
+            [self.linesInProgress removeAllObjects];
+        }
+        
+    } else if (gr.state == UIGestureRecognizerStateEnded) {
+        
+        self.selectedLine = nil;
+    }
+    
+    [self setNeedsDisplay];
+}
+
+-(void)moveLine:(UIPanGestureRecognizer *)gr
+{
+    if (!self.selectedLine) {
+        return;
+    }
+    
+    if (gr.state == UIGestureRecognizerStateChanged) {
+        
+        CGPoint translation = [gr translationInView:self];
+        CGPoint begin = self.selectedLine.begin;
+        begin.x += translation.x;
+        begin.y += translation.y;
+        
+        CGPoint end = self.selectedLine.end;
+        end.x += translation.x;
+        end.y += translation.y;
+        
+        self.selectedLine.begin = begin;
+        self.selectedLine.end = end;
+        [self setNeedsDisplay];
+        [gr setTranslation:CGPointZero inView:self];
+    }
 }
 
 #pragma mark - first responder
