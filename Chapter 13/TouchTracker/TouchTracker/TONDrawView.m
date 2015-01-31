@@ -61,7 +61,6 @@
                                action:@selector(moveLine:)];
         self.moveRecognizer.delegate = self;
         self.moveRecognizer.cancelsTouchesInView = NO;
-        self.moveRecognizer.delaysTouchesBegan = YES;
         [self addGestureRecognizer:self.moveRecognizer];
     }
     
@@ -251,16 +250,11 @@
 {
     if (!self.selectedLine) {
         return;
-    }else if ([[UIMenuController  sharedMenuController] isMenuVisible])
-    {
+        
+    }else if ([[UIMenuController  sharedMenuController] isMenuVisible]) {
+        
         self.selectedLine = nil;
         [[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
-        return;
-    }
-    
-    if ([[UIMenuController sharedMenuController] isMenuVisible]) {
-        [[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
-        self.selectedLine = nil;
         return;
     }
     
