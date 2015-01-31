@@ -249,6 +249,11 @@
 {
     if (!self.selectedLine) {
         return;
+    }else if ([[UIMenuController  sharedMenuController] isMenuVisible])
+    {
+        self.selectedLine = nil;
+        [[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
+        return;
     }
     
     if (gr.state == UIGestureRecognizerStateChanged) {
