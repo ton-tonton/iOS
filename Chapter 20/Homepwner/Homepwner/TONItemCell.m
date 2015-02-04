@@ -51,7 +51,6 @@
     
     NSNumber *imageSize = imgSize[userSize];
     self.imageViewHeightConstraint.constant = imageSize.floatValue;
-    self.imageViewWidthConstraint.constant = imageSize.floatValue;
 }
 
 -(void)awakeFromNib
@@ -63,6 +62,15 @@
                       selector:@selector(updateInterfaceForDynamicTypeSize)
                           name:UIContentSizeCategoryDidChangeNotification
                         object:nil];
+    
+    NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem:self.thumbnailView
+                                                                  attribute:NSLayoutAttributeHeight
+                                                                  relatedBy:NSLayoutRelationEqual
+                                                                     toItem:self.thumbnailView
+                                                                  attribute:NSLayoutAttributeWidth
+                                                                 multiplier:1
+                                                                   constant:0];
+;
 }
 
 -(void)dealloc
