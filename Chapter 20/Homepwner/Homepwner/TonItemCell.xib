@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JXH-61-hFG" customClass="TONItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JXH-61-hFG" id="Rdt-Nf-hE9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBb-IS-bBs">
+                        <rect key="frame" x="48" y="1" width="202" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAq-Bl-uHy">
+                        <rect key="frame" x="258" y="11" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVQ-6W-Ec7">
+                        <rect key="frame" x="48" y="27" width="202" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9tc-tU-IA4">
+                        <rect key="frame" x="0.0" y="2" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="lww-WT-8qN"/>
+                            <constraint firstAttribute="height" constant="40" id="nqT-0L-cpM"/>
+                        </constraints>
+                    </imageView>
+                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzE-QW-XZi">
+                        <rect key="frame" x="0.0" y="2" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="showImage:" destination="JXH-61-hFG" eventType="touchUpInside" id="OqM-O5-af1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vBb-IS-bBs" firstAttribute="leading" secondItem="9tc-tU-IA4" secondAttribute="trailing" constant="8" id="87c-v3-UWR"/>
+                    <constraint firstItem="ZAq-Bl-uHy" firstAttribute="leading" secondItem="vBb-IS-bBs" secondAttribute="trailing" constant="8" id="8DX-0G-uTd"/>
+                    <constraint firstItem="vBb-IS-bBs" firstAttribute="top" secondItem="Rdt-Nf-hE9" secondAttribute="top" constant="1" id="AlB-vg-3m9"/>
+                    <constraint firstItem="aVQ-6W-Ec7" firstAttribute="leading" secondItem="9tc-tU-IA4" secondAttribute="trailing" constant="8" id="BAs-Y7-rzr"/>
+                    <constraint firstItem="ZAq-Bl-uHy" firstAttribute="leading" secondItem="aVQ-6W-Ec7" secondAttribute="trailing" constant="8" id="EkP-Ya-wMf"/>
+                    <constraint firstAttribute="centerY" secondItem="ZAq-Bl-uHy" secondAttribute="centerY" id="JRX-X8-Mef"/>
+                    <constraint firstItem="aVQ-6W-Ec7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vBb-IS-bBs" secondAttribute="bottom" constant="5" id="JSI-nX-O3I"/>
+                    <constraint firstItem="9tc-tU-IA4" firstAttribute="top" secondItem="WzE-QW-XZi" secondAttribute="top" id="NDQ-e6-9af"/>
+                    <constraint firstAttribute="bottom" secondItem="aVQ-6W-Ec7" secondAttribute="bottom" constant="1" id="Nlb-lA-iKB"/>
+                    <constraint firstItem="9tc-tU-IA4" firstAttribute="bottom" secondItem="WzE-QW-XZi" secondAttribute="bottom" id="TZ9-BP-Cg2"/>
+                    <constraint firstAttribute="trailing" secondItem="ZAq-Bl-uHy" secondAttribute="trailing" constant="20" id="Wdv-td-leF"/>
+                    <constraint firstAttribute="centerY" secondItem="9tc-tU-IA4" secondAttribute="centerY" id="dwx-VJ-vuO"/>
+                    <constraint firstItem="9tc-tU-IA4" firstAttribute="leading" secondItem="Rdt-Nf-hE9" secondAttribute="leading" id="nRd-DS-0Bw"/>
+                    <constraint firstItem="9tc-tU-IA4" firstAttribute="leading" secondItem="WzE-QW-XZi" secondAttribute="leading" id="qYv-ic-JVo"/>
+                    <constraint firstItem="9tc-tU-IA4" firstAttribute="trailing" secondItem="WzE-QW-XZi" secondAttribute="trailing" id="uy1-9f-vfC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewWidthConstraint" destination="lww-WT-8qN" id="5Ig-kq-AQ0"/>
+                <outlet property="nameLabel" destination="vBb-IS-bBs" id="PcI-et-vaq"/>
+                <outlet property="serialNumberLabel" destination="aVQ-6W-Ec7" id="dZJ-PR-cgI"/>
+                <outlet property="thumbnailView" destination="9tc-tU-IA4" id="Ucs-r9-lmM"/>
+                <outlet property="valueLabel" destination="ZAq-Bl-uHy" id="S6G-jm-tW6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
