@@ -8,6 +8,7 @@
 
 #import "TONAppDelegate.h"
 #import "TONCoursesViewController.h"
+#import "TONWebViewController.h"
 
 @implementation TONAppDelegate
 
@@ -17,8 +18,11 @@
     
     // Override point for customization after application launch.
     TONCoursesViewController *cvc = [[TONCoursesViewController alloc] initWithStyle:UITableViewStylePlain];
+    TONWebViewController *wvc = [[TONWebViewController alloc] init];
+    
     UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:cvc];
     
+    cvc.webViewController = wvc;
     self.window.rootViewController = masterNav;
     
     self.window.backgroundColor = [UIColor whiteColor];

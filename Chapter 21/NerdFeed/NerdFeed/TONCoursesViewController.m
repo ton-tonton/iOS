@@ -7,8 +7,9 @@
 //
 
 #import "TONCoursesViewController.h"
+#import "TONWebViewController.h"
 
-@interface TONCoursesViewController ()
+@interface TONCoursesViewController () <NSURLSessionDataDelegate>
 
 @property (nonatomic, strong) NSURLSession *session;
 @property (nonatomic, copy) NSArray *courses;
@@ -28,7 +29,9 @@
         self.navigationItem.title = @"Courses";
         
         NSURLSessionConfiguration *conf = [NSURLSessionConfiguration defaultSessionConfiguration];
-        _session = [NSURLSession sessionWithConfiguration:conf delegate:nil delegateQueue:nil];
+        _session = [NSURLSession sessionWithConfiguration:conf
+                                                 delegate:self
+                                            delegateQueue:nil];
         
         [self fetchFeed];
     }
@@ -61,11 +64,23 @@ numberOfRowsInSection:(NSInteger)section
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *course = self.courses[indexPath.row];
+    NSURL *url = [NSURL URLWithString:course[@"url"]];
+    
+    self.webViewController.url = url;
+    self.webViewController.navigationItem.title = course[@"title"];
+    
+    [self.navigationController pushViewController:self.webViewController animated:YES];
+}
+
 #pragma mark - web communicate
 
 -(void)fetchFeed
 {
-    NSString *requestString = @"http://bookapi.bignerdranch.com/courses.json";
+    NSString *requestString = @"https://bookapi.bignerdranch.com/private/courses.json";
     NSURL *url = [NSURL URLWithString:requestString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
@@ -85,6 +100,18 @@ numberOfRowsInSection:(NSInteger)section
             }];
     
     [dataTask resume];
+}
+
+-(void)URLSession:(NSURLSession *)session
+             task:(NSURLSessionTask *)task
+didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
+completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential *))completionHandler
+{
+    NSURLCredential *cred = [NSURLCredential credentialWithUser:@"BigNerdRanch"
+                                                       password:@"AchieveNerdvana"
+                                                    persistence:NSURLCredentialPersistenceForSession];
+    
+    completionHandler(NSURLSessionAuthChallengeUseCredential, cred);
 }
 
 @end

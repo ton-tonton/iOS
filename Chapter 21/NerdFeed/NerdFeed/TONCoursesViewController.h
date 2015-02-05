@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class TONWebViewController;
+
 @interface TONCoursesViewController : UITableViewController
+
+@property (nonatomic) TONWebViewController *webViewController;
 
 @end
