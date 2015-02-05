@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DD327781A83C560008F6FF7 /* TONAssetTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD327771A83C560008F6FF7 /* TONAssetTypeViewController.m */; };
 		1C1420661A7A143E00733825 /* TONImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C1420651A7A143E00733825 /* TONImageStore.m */; };
 		1C496C201A81C7F300F189B3 /* TONItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C496C1F1A81C7F300F189B3 /* TONItemCell.m */; };
 		1C496C221A81C93400F189B3 /* TonItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C496C211A81C93400F189B3 /* TonItemCell.xib */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DD327761A83C560008F6FF7 /* TONAssetTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONAssetTypeViewController.h; sourceTree = "<group>"; };
+		0DD327771A83C560008F6FF7 /* TONAssetTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONAssetTypeViewController.m; sourceTree = "<group>"; };
 		1C1420641A7A143E00733825 /* TONImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONImageStore.h; sourceTree = "<group>"; };
 		1C1420651A7A143E00733825 /* TONImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TONImageStore.m; sourceTree = "<group>"; };
 		1C496C1E1A81C7F300F189B3 /* TONItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TONItemCell.h; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				1C496C211A81C93400F189B3 /* TonItemCell.xib */,
 				1CC195071A739B68005EB508 /* TONItemStore.h */,
 				1CC195081A739B68005EB508 /* TONItemStore.m */,
+				0DD327761A83C560008F6FF7 /* TONAssetTypeViewController.h */,
+				0DD327771A83C560008F6FF7 /* TONAssetTypeViewController.m */,
 				1CC195011A73935F005EB508 /* TONItemsViewController.h */,
 				1CC195021A73935F005EB508 /* TONItemsViewController.m */,
 				1C496C231A81FCDC00F189B3 /* TONImageViewController.h */,
@@ -300,6 +305,7 @@
 				1C69F2C21A78A01C00237FEF /* TONDetailViewController.m in Sources */,
 				1CC195031A73935F005EB508 /* TONItemsViewController.m in Sources */,
 				1CC194DF1A739036005EB508 /* main.m in Sources */,
+				0DD327781A83C560008F6FF7 /* TONAssetTypeViewController.m in Sources */,
 				1C496C251A81FCDC00F189B3 /* TONImageViewController.m in Sources */,
 				1CB7A9BE1A834BF800B57075 /* Homepwner.xcdatamodeld in Sources */,
 			);

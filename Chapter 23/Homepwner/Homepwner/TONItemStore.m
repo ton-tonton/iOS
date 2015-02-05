@@ -15,7 +15,7 @@
 @interface TONItemStore ()
 
 @property (nonatomic) NSMutableArray *privateItems;
-@property (nonatomic, strong) NSMutableArray *allAssetType;
+@property (nonatomic, strong) NSMutableArray *allAssetTypes;
 @property (nonatomic, strong) NSManagedObjectContext *context;
 @property (nonatomic, strong) NSManagedObjectModel *model;
 
@@ -104,6 +104,46 @@
     
     [self.privateItems addObject:item];
     return item;
+}
+
+-(NSArray *)allAssetTypes
+{
+    if (!_allAssetTypes) {
+        
+        NSFetchRequest *req = [[NSFetchRequest alloc] init];
+        NSEntityDescription *e = [NSEntityDescription entityForName:@"TONAssetType"
+                                             inManagedObjectContext:self.context];
+        req.entity = e;
+        
+        NSError *err;
+        NSArray *result = [self.context executeFetchRequest:req error:&err];
+        
+        if (!result) {
+            [NSException raise:@"FetchFailed" format:@"%@",[err localizedDescription]];
+        }
+        
+        _allAssetTypes = [result mutableCopy];
+    }
+    
+    if ([_allAssetTypes count] == 0) {
+        
+        NSManagedObject *type = [NSEntityDescription insertNewObjectForEntityForName:@"TONAssetType"
+                                                              inManagedObjectContext:self.context];
+        [type setValue:@"Animal" forKey:@"label"];
+        [_allAssetTypes addObject:type];
+        
+        type =  [NSEntityDescription insertNewObjectForEntityForName:@"TONAssetType"
+                                              inManagedObjectContext:self.context];
+        [type setValue:@"Natural" forKey:@"label"];
+        [_allAssetTypes addObject:type];
+        
+        type =  [NSEntityDescription insertNewObjectForEntityForName:@"TONAssetType"
+                                              inManagedObjectContext:self.context];
+        [type setValue:@"Town" forKey:@"label"];
+        [_allAssetTypes addObject:type];
+    }
+    
+    return _allAssetTypes;
 }
 
 -(void)removeItem:(TONItem *)item

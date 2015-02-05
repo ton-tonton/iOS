@@ -10,6 +10,7 @@
 #import "TONItem.h"
 #import "TONImageStore.h"
 #import "TONItemStore.h"
+#import "TONAssetTypeViewController.h"
 
 @interface TONDetailViewController () <UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIPopoverControllerDelegate>
 
@@ -23,8 +24,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *valueField;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *cameraButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *assetTypeButton;
+
+
 @property (strong, nonatomic) UIPopoverController *imagePickerPopover;
 
 
@@ -117,7 +122,6 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self updateFont];
     
     UIInterfaceOrientation io = [[UIApplication sharedApplication] statusBarOrientation];
     [self prepareViewsForOrientation:io];
@@ -136,6 +140,15 @@
     self.valueField.text = [NSString stringWithFormat:@"%d", item.valueInDollars];
     self.dateLabel.text = [dateFormatter stringFromDate:item.dateCreated];
     self.imageView.image =  [[TONImageStore sharedStroe] imageForKey:self.item.imageKey];
+    
+    NSString *typeLabel = [self.item.assetType valueForKey:@"label"];
+    
+    if (!typeLabel) {
+        typeLabel = @"None";
+    }
+    
+    self.assetTypeButton.title = [NSString stringWithFormat:@"Type: %@", typeLabel];
+    [self updateFont];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -242,6 +255,16 @@
         [[TONImageStore sharedStroe] deleteImageForKey:self.item.imageKey];
         
     }
+}
+
+-(IBAction)showAssetTypePicker:(id)sender
+{
+    [self.view endEditing:YES];
+    
+    TONAssetTypeViewController *avc = [[TONAssetTypeViewController alloc] init];
+    avc.item = self.item;
+    
+    [self.navigationController pushViewController:avc animated:YES];
 }
 
 #pragma mark - rotation

@@ -20,5 +20,6 @@
 -(void)removeItem:(TONItem *)item;
 -(void)moveItemAtIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex;
 -(BOOL)saveChanges;
+-(NSArray *)allAssetTypes;
 
 @end
