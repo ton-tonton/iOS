@@ -37,7 +37,7 @@
                         <rect key="frame" x="0.0" y="2" width="40" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="lww-WT-8qN"/>
+                            <constraint firstAttribute="width" constant="40" placeholder="YES" id="lww-WT-8qN"/>
                             <constraint firstAttribute="height" constant="40" id="nqT-0L-cpM"/>
                         </constraints>
                     </imageView>
@@ -71,7 +71,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="imageViewWidthConstraint" destination="lww-WT-8qN" id="5Ig-kq-AQ0"/>
+                <outlet property="imageViewHeightConstraint" destination="nqT-0L-cpM" id="WQ8-94-rPP"/>
                 <outlet property="nameLabel" destination="vBb-IS-bBs" id="PcI-et-vaq"/>
                 <outlet property="serialNumberLabel" destination="aVQ-6W-Ec7" id="dZJ-PR-cgI"/>
                 <outlet property="thumbnailView" destination="9tc-tU-IA4" id="Ucs-r9-lmM"/>

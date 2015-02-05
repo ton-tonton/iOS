@@ -10,7 +10,7 @@
 
 @interface TONItemCell ()
 
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint *imageViewWidthConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *imageViewHeightConstraint;
 
 @end
 
@@ -70,7 +70,8 @@
                                                                   attribute:NSLayoutAttributeWidth
                                                                  multiplier:1
                                                                    constant:0];
-;
+    
+    [self.thumbnailView addConstraint:constraint];
 }
 
 -(void)dealloc
