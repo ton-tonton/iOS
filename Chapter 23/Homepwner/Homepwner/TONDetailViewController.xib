@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TONDetailViewController">
             <connections>
+                <outlet property="assetTypeButton" destination="uAg-5l-WEL" id="6pf-LB-8T2"/>
                 <outlet property="cameraButton" destination="G4d-JG-Fdb" id="qq9-dy-3yB"/>
                 <outlet property="dateLabel" destination="XtI-oa-nCx" id="ryj-8q-2cm"/>
                 <outlet property="itemNameLabel" destination="k7f-4m-VNn" id="NKl-7Z-uAy"/>
@@ -88,6 +89,12 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="I7Y-J2-J0o"/>
+                        <barButtonItem title="Item" id="uAg-5l-WEL">
+                            <connections>
+                                <action selector="showAssetTypePicker:" destination="-1" id="xMV-FF-ofR"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="xHJ-Zg-7Yi"/>
                         <barButtonItem systemItem="trash" id="4GY-8a-Qiu">
                             <connections>
                                 <action selector="removePicture:" destination="-1" id="PFA-IG-Q9U"/>
