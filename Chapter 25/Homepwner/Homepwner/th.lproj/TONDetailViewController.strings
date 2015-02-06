@@ -1,0 +1,15 @@
+
+/* Class = "IBUILabel"; text = "Value"; ObjectID = "QK8-uy-Wee"; */
+"QK8-uy-Wee.text" = "ราคา";
+
+/* Class = "IBUILabel"; text = "Serial"; ObjectID = "Qvj-II-I6o"; */
+"Qvj-II-I6o.text" = "รหัสสินค้า";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "XtI-oa-nCx"; */
+"XtI-oa-nCx.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Name"; ObjectID = "k7f-4m-VNn"; */
+"k7f-4m-VNn.text" = "ชื่อ";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "uAg-5l-WEL"; */
+"uAg-5l-WEL.title" = "Item";
