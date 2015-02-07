@@ -10,8 +10,8 @@
 #import "TONItemsViewController.h"
 #import "TONItemStore.h"
 
-NSString * const TONNextItemValuePrefsKey;
-NSString * const TONNextItemNamePrefsKey;
+NSString * const TONNextItemValuePrefsKey = @"NextItemValue";
+NSString * const TONNextItemNamePrefsKey = @"NextItemName";
 
 @implementation TONAppDelegate
 
