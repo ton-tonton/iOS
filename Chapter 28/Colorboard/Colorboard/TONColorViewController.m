@@ -27,7 +27,7 @@
     [super viewDidLoad];
     
     UIColor *color = self.colorDesc.color;
-    float red, green, blue;
+    CGFloat red, green, blue;
     
     [color getRed:&red green:&green blue:&blue alpha:nil];
     self.redSlider.value = red;
